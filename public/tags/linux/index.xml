@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on made kun</title>
+    <link>https://www.ardianta.com/tags/linux/</link>
+    <description>Recent content in Linux on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 18 Sep 2021 19:59:51 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix: Ikon Aplikasi yang diinstal dengan Snap tidak Tampil</title>
+      <link>https://www.ardianta.com/blog/snap-kde-icon/</link>
+      <pubDate>Sat, 18 Sep 2021 19:59:51 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/snap-kde-icon/</guid>
+      <description>Awalnya saya mengira ini masalah di KDE, tapi ternyata bukan.
+Setiap kali saya instal aplikasi dengan snap, ikon-nya pasti tidak ada di menu launcher.
+Ini membuat saya kesal, dan tidak ingin menggunakan snap.
+Mengapa bisa begini?
+Apakah snap tidak mendukung KDE?
+Tapi jika saya install dari Discover (Manajer aplikasi bawaan KDE), aplikasi yang bersumber dari snap bisa terinstal dengan benar.
+Tapi kenapa saat saya menggunakan command line, ikon aplikasinya tidak tampil di menu?</description>
+    </item>
+    
+    <item>
+      <title>Fix: Kde Flicker Bug</title>
+      <link>https://www.ardianta.com/blog/fix-kde-flicker-bug/</link>
+      <pubDate>Tue, 11 May 2021 09:24:09 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/fix-kde-flicker-bug/</guid>
+      <description>⚠ Masalah: Terjadi flicker atau layar berkedip saat resize window di Kubuntu 20.04. Mungkin saja VGA Card yang digunakan laptop saya tidak mampu menghandle animasinya.
+Video Demo:
+  ✅ Solusi: Buka, Settings-&amp;gt;Display and Monitor. Lalu ubah settingan compositor.
+ Saya gunakan OpenGL 2.0 sebagai rendering backend. Entah mengapa, kalau pakai yang lain terjadi flicker.</description>
+    </item>
+    
+    <item>
+      <title>Fix: Tombol Meta/Windows tidak Membuka Menu di KDE</title>
+      <link>https://www.ardianta.com/blog/fix-kde-menu-meta/</link>
+      <pubDate>Tue, 11 May 2021 07:20:47 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/fix-kde-menu-meta/</guid>
+      <description>⚠ Masalah: Tombol Meta atau Windows tidak berfungsi untuk membuka menu launcher di KDE. Saat ini saya pakai Kubuntu 20.04 dengan KDE Plasma 5.
+✅ Solusi: Buka Global Shortcut, bisa dari System Settings atau juga menu launcher.
+Kemudian, masuk ke menu Plasma, lalu tambahkan Alt+F1 sebagai key shortcut untuk Activate Application Menu Widget.
+ Jika belum bisa, coba klik kanan pada Menu launcher lalu pilih Configure Application Menu.
+ Setelah itu, tambahkan Alt+F1 sebagai shortcut untuk membuka menu tersebut.</description>
+    </item>
+    
+    <item>
+      <title>Flash HP Android dari Linux</title>
+      <link>https://www.ardianta.com/blog/flash-android-linux/</link>
+      <pubDate>Mon, 17 Aug 2020 00:36:34 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/flash-android-linux/</guid>
+      <description>Saya punya HP Xiaomi Redmi 2 (HM2014819) yang sudah lama mati. HP tersebut pernah error, entah karena apa.. ia bootloop.
+Salah satu solusi dari permasalah ini adalah flash dengan ROM yang baru.
+Saya sempat berpikir, kalau Flashing HP harus pakai Mi Flash. Sedangkan aplikasi Mi Flash belum ada untuk Linux.
+Tapi ternyata saya salah.
+Flash HP di Linux cukup dilakukan dengan dua tools, yakni adb dan fastboot. Sebenarnya dua program ini sudah ada di komputer saya, karena sebelumnya saya pernah pakai buat coding aplikasi android di android studio.</description>
+    </item>
+    
+    <item>
+      <title>Saya Ganti Distro, dari Linux Mint ke Kubuntu</title>
+      <link>https://www.ardianta.com/blog/ganti-distro/</link>
+      <pubDate>Thu, 07 Jun 2018 06:20:39 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/ganti-distro/</guid>
+      <description>Hari ini saya selesai menginstal distro Kubuntu 18.04 yang instalasinya dimulai dari kemarin tanggal 06/06/2018.
+Momentum banget ini, saat ulang tahun&amp;hellip; saya ganti distro. Hehe, mungkin nanti biar ingat, kapan saat saya ganti distro.
+Sejak hari kemarin, saya melakukan backup semua data ke laptop bapak, karena nanti hardisk laptop saya akan dipartisi ulang.
+Partisi root yang sebelumnya saya gunakan 30GB, sekarang saya pakai sekitar 60GB. Dua kali lipat dari yang sebelumnya.</description>
+    </item>
+    
+    <item>
+      <title>Isengin Web Python dan dapat akses Shell Linux Gratis!</title>
+      <link>https://www.ardianta.com/blog/shell-web-python/</link>
+      <pubDate>Fri, 16 Feb 2018 07:15:15 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/shell-web-python/</guid>
+      <description>Karena habis gentayangan di beberapa cloud workspace seperti c9.io, codenvy, dan glitch saya tiba-tiba kepikiran untuk mengakses shell dari web Python.
+Di website Python, terdapat shell python yang bisa kita gunakan untuk ujicaoba kode python.
+Lalu, bagaimana kalau&amp;hellip;
+Kita akses shell seperti bash atau zsh di sana?
+Ya, itu bisa.
+Caranya:
+Pertama saya coba-coba dulu menjalankan perintah Linux dengan mengimpor modul os.
+Di dalam modul os, terdapat fungsi untuk menjalankan perintah Linux, yaitu: system().</description>
+    </item>
+    
+    <item>
+      <title>Install Inkscape Terbaru dari PPA Resmi</title>
+      <link>https://www.ardianta.com/blog/ppa-inkscape/</link>
+      <pubDate>Tue, 06 Feb 2018 16:29:16 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/ppa-inkscape/</guid>
+      <description>Saya menggunakan Inkscape 0.91, kadang sering stuck saat melakukan dragging dengan tombol spasi dan mouse.
+Mungkin saja di versi 0.92 sudah diperbaiki. Oya, versi 0.91 ini dirilis pada tahun 2015, sedangkan 0.92 pada tahun 2017.
+Saya ingin upgrade ke 0.92, namun belum tersedia di repositori resmi.
+Akhirnya menemukan PPA ini:
+sudo add-apt-repository ppa:inkscape.dev/stable sudo apt-get update Dan sekarang saya sudah bisa install Inkscape 0.92, yay!
+ Sumber: https://code.launchpad.net/~inkscape.dev/+archive/ubuntu/stable</description>
+    </item>
+    
+    <item>
+      <title>Masalah Saat Upgrade Linux Mint 18</title>
+      <link>https://www.ardianta.com/blog/upgrade-lm-18/</link>
+      <pubDate>Wed, 31 Jan 2018 04:18:56 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/upgrade-lm-18/</guid>
+      <description>Kemarin saya pergi ke tempat Wifi.id dan melakukan upgrade Linux Mint. Akan tetapi dapat sedikit masalah dengan mysql-server.
+Entah mengapa ini bisa terjadi&amp;hellip;
+Sebenarnya ini yang membuat saya malas upgrade Linux. Kadang sering terjadi error karena ada beberapa bugs yang belum diperbaiki.
+Namun, untungnya sudah solved dengan solusi dari https://askubuntu.com/a/762432/235594.
+Berikut ini log Terminal saya:
+petanikode@imajinasi ~ $ apt install shutter [sudo] password for petanikode: Reading package lists... Done Building dependency tree Reading state information.</description>
+    </item>
+    
+    <item>
+      <title>9 Ilmu (Teknologi) yang Saya Pelajari selama Tahun 2017</title>
+      <link>https://www.ardianta.com/blog/ilmu-2017/</link>
+      <pubDate>Sun, 31 Dec 2017 04:29:54 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/ilmu-2017/</guid>
+      <description>Saya tidak begitu pandai membuat rencana. Kadang sering mengubah rencana secara tiba-tiba.
+Sebelum masuk tahun 2017 saya membuat rencana ingin belajar berbagai macam teknologi. Tapi malah melenceng, alias tidak sesuai dengan yang direncanakan.
+&amp;hellip;dan sekarang saya ingin me-review apa saja yang sudah dipelajari sepanjang tahun 2017.
+1. Membuat Blog dengan Hugo Akhir tahun lalu, saya mulai mengenal Hugo karena menonton video benchmark-nya di Youtube. Hugo bisa me-render 5000 halaman dalam beberapa detik.</description>
+    </item>
+    
+    <item>
+      <title>Install Docker di Linux Mint 18</title>
+      <link>https://www.ardianta.com/blog/install-docker/</link>
+      <pubDate>Sat, 30 Dec 2017 17:41:27 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/install-docker/</guid>
+      <description>Pertama lakukan update:
+sudo apt-get update Berikutnya install paket-paket yang dibutuhkan:
+sudo apt-get install \  apt-transport-https \  ca-certificates \  curl \  software-properties-common Tamhakan GPG Key resmi Docker:
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - Versifikasi fingerprint 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88
+sudo apt-key fingerprint 0EBFCD88 outputnya:
+pub 4096R/0EBFCD88 2017-02-22 Key fingerprint = 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88 uid Docker Release (CE deb) &amp;lt;docker@docker.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>note on made kun</title>
+    <link>https://www.ardianta.com/tags/note/</link>
+    <description>Recent content in note on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Aug 2021 11:57:23 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mulai Menggunakan VSNote</title>
+      <link>https://www.ardianta.com/blog/vsnote/</link>
+      <pubDate>Sun, 22 Aug 2021 11:57:23 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/vsnote/</guid>
+      <description>Hari ini saya mulai menggunakan VSNote untuk mengelola catatan pribadi.
+Saya sudah coba beberapa tools, seperti Evernote dan Notion, tapi sepertinya menulis di teks editor terasa lebih menyenangkan dibandingkan editor berbasis grafik.
+Apa yang akan saya tulis di VSNote? Buku catatan pribadi, ya tentunya berisi catatan-catatan penting dan tidak penting yang ingin saya catat.
+Seperti: Diary, Jurnal Mimpi, Ide, Daily Meeting/Standup, dll.
+Intinya, tulisan ini tidak akan disebarkan di internet. Hanya saya yang boleh baca isinya.</description>
+    </item>
+    
+  </channel>
+</rss>

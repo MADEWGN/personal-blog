@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snap on made kun</title>
+    <link>https://www.ardianta.com/tags/snap/</link>
+    <description>Recent content in Snap on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 18 Sep 2021 19:59:51 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/snap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix: Ikon Aplikasi yang diinstal dengan Snap tidak Tampil</title>
+      <link>https://www.ardianta.com/blog/snap-kde-icon/</link>
+      <pubDate>Sat, 18 Sep 2021 19:59:51 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/snap-kde-icon/</guid>
+      <description>Awalnya saya mengira ini masalah di KDE, tapi ternyata bukan.
+Setiap kali saya instal aplikasi dengan snap, ikon-nya pasti tidak ada di menu launcher.
+Ini membuat saya kesal, dan tidak ingin menggunakan snap.
+Mengapa bisa begini?
+Apakah snap tidak mendukung KDE?
+Tapi jika saya install dari Discover (Manajer aplikasi bawaan KDE), aplikasi yang bersumber dari snap bisa terinstal dengan benar.
+Tapi kenapa saat saya menggunakan command line, ikon aplikasinya tidak tampil di menu?</description>
+    </item>
+    
+  </channel>
+</rss>

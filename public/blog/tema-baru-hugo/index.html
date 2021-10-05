@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Membuat Tema Hugo Sendiri</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<meta itemprop="name" content="Membuat Tema Hugo Sendiri">
+<meta itemprop="description" content="Menggunakan tema orang lain, rasanya saya kurang bebas. Karena banyak yang tidak dipahami di stuktur tema mereka. Akhirnya saya membuat tema sendiri untuk blog ini."><meta itemprop="datePublished" content="2017-12-18T15:49:46+08:00" />
+<meta itemprop="dateModified" content="2017-12-18T15:49:46+08:00" />
+<meta itemprop="wordCount" content="411">
+<meta itemprop="keywords" content="blog,hugo," />
+
+<meta property="og:title" content="Membuat Tema Hugo Sendiri" />
+<meta property="og:description" content="Menggunakan tema orang lain, rasanya saya kurang bebas. Karena banyak yang tidak dipahami di stuktur tema mereka. Akhirnya saya membuat tema sendiri untuk blog ini." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ardianta.com/blog/tema-baru-hugo/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-12-18T15:49:46+08:00" />
+<meta property="article:modified_time" content="2017-12-18T15:49:46+08:00" />
+
+
+<meta content='summary_large_image' name='twitter:card' />
+<meta content='@ardiantapargo' name='twitter:site' />
+<meta content='@ardiantapargo' name='twitter:creator' />
+<meta property='og:image' content='https://www.ardianta.comimg/tema-baru/index.png'
+/>
+<meta content='id_ID' property='og:locale' />
+<meta content='ms_MY' property='og:locale:alternate' />
+<meta content='en_US' property='og:locale:alternate' />
+
+
+
+
+<meta content='ardianta.pargo' property='fb:profile_id' />
+
+<meta property="article:author" content="https://web.facebook.com/ardianta.pargo" />
+
+
+
+
+<meta name="p:domain_verify" content="045746d704fe9ae94f6f3e87acc80385"/>
+
+<link rel="icon" href="/img/ardianta.jpg" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'> 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-54154424-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+<body class="bg-light">
+
+    <header>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h1>
+                    <a href="https://www.ardianta.com">
+                        <img class="mw-100" src="/img/logo-web.png" height="120" alt="ardianta logo" />
+                    </a>
+                </h1>
+
+                <ul class="nav justify-content-center">
+                    
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://ardiantapargo.deviantart.com/">Art</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://twitter.com/ardiantapargo">Twitter</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://github.com/ardianta">Github</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="http://feeds.feedburner.com/ardianta">RSS</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 col-12">
+                <div class="card rounded-0 post-outer">
+                    <div class="card-body p-md-5">
+                        <div class="post-content">
+                            <div class="post-header mb-3">
+                                <h2 class="post-title">Membuat Tema Hugo Sendiri</h2>
+                                <hr>
+                                <span class="text-secondary small">Update terakhir: </span>
+                                <time class="text-secondary small" title="2017-12-18 15:49:46 &#43;0800 &#43;0800">18 Dec 2017</time>
+                            </div>
+                            <div class="post-body">
+                                <p>Menggunakan tema orang lain, rasanya saya kurang bebas.
+Karena banyak yang tidak dipahami di stuktur tema mereka.</p>
+<p>Akhirnya saya membuat tema sendiri untuk blog ini.</p>
+<h3 id="tema-baru-ardianta">Tema Baru Ardianta</h3>
+<p>ini isi file <code>config.toml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseurl</span> = <span style="color:#e6db74">&#34;https://ardianta.github.io/&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Ardianta&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;ardianta&#34;</span>
+
+<span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;UA-54154424-1&#34;</span>
+<span style="color:#a6e22e">disqusShortname</span> = <span style="color:#e6db74">&#34;ardianta&#34;</span>
+
+[<span style="color:#a6e22e">permalinks</span>]
+  <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;/blog/:slug/&#34;</span>
+  <span style="color:#a6e22e">page</span> = <span style="color:#e6db74">&#34;/:slug/&#34;</span>
+
+[<span style="color:#a6e22e">params</span>]
+  <span style="color:#75715e"># Site Author</span>
+  <span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;Dian&#34;</span>
+
+  <span style="color:#75715e"># Description/subtitle for homepage</span>
+  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Hello, saya Dian. Blog ini belum jadi. Sabar ya...&#34;</span>
+</code></pre></div><p>ini isi file <code>archetypes/default.md</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+title: &#34;{{ replace .TranslationBaseName &#34;-&#34; &#34; &#34; | title }}&#34;
+slug: {{ .BaseFileName }}
+date: {{ .Date }}
+draft: true
+
+meta:
+    image: &#34;&#34;
+    description: &#34;&#34;
+---
+</code></pre></div><p>Lalu untuk layout <code>index.html</code> dan <code>single.html</code> isinya seperti ini:</p>
+<p>file: <code>themes/ardianta/layouts/index.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+
+&lt;<span style="color:#f92672">head</span>&gt;
+    {{ partial &#34;head.html&#34; . }}
+&lt;/<span style="color:#f92672">head</span>&gt;
+
+&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bg-light&#34;</span>&gt;
+
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row align-items-center justify-content-center&#34;</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-8 mt-5&#34;</span>&gt;
+
+                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card rounded-0 post-content&#34;</span>&gt;
+                    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-body p-5&#34;</span>&gt;
+
+
+                        {{ partial &#34;header.html&#34; . }} {{ range (.Data.Pages.GroupByDate &#34;2006&#34;) }}
+                        &lt;<span style="color:#f92672">table</span>&gt;
+                            &lt;<span style="color:#f92672">tr</span>&gt;
+                                &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">colspan</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span>&gt;
+                                    &lt;<span style="color:#f92672">h4</span>&gt;{{ .Key }}&lt;/<span style="color:#f92672">h4</span>&gt;
+                                &lt;/<span style="color:#f92672">td</span>&gt;
+                            &lt;/<span style="color:#f92672">tr</span>&gt;
+                            {{ range where .Pages &#34;Section&#34; &#34;post&#34;}}
+                            &lt;<span style="color:#f92672">tr</span>&gt;
+                                &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;p-1&#34;</span>&gt;
+                                    &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-secondary small&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Date }}&#34;</span>&gt;{{ .Date.Format &#34;2 Jan 2006&#34; }}&lt;/<span style="color:#f92672">time</span>&gt;
+                                &lt;/<span style="color:#f92672">td</span>&gt;
+
+                                &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;p-1&#34;</span>&gt;
+                                    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-success&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;
+                                &lt;/<span style="color:#f92672">td</span>&gt;
+                            &lt;/<span style="color:#f92672">tr</span>&gt;
+                            {{ end }}
+                        &lt;/<span style="color:#f92672">table</span>&gt;
+                        {{ end }}
+
+                    &lt;/<span style="color:#f92672">div</span>&gt;
+                &lt;/<span style="color:#f92672">div</span>&gt;
+
+                {{ partial &#34;footer.html&#34; . }}
+            &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        <span style="color:#75715e">&lt;!-- /row --&gt;</span>
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    <span style="color:#75715e">&lt;!-- /container --&gt;</span>
+
+
+&lt;/<span style="color:#f92672">body</span>&gt;
+
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p>Penampakannya:</p>
+<p>
+
+<img class="img-fluid" src="/img/tema-baru/index.png" />
+
+</p>
+<p>file: <code>themes/ardianta/layouts/_default/single.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+
+&lt;<span style="color:#f92672">head</span>&gt;
+    {{ partial &#34;head.html&#34; . }}
+&lt;/<span style="color:#f92672">head</span>&gt;
+
+&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bg-light&#34;</span>&gt;
+
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container mt-5 mb-5&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row align-items-center justify-content-center&#34;</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-8&#34;</span>&gt;
+                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card rounded-0 post-content&#34;</span>&gt;
+                    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-body p-5&#34;</span>&gt;
+                        {{ partial &#34;header.html&#34; . }}
+                        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-header mb-3&#34;</span>&gt;
+                            &lt;<span style="color:#f92672">h2</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h2</span>&gt;
+                            &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-secondary small&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Date }}&#34;</span>&gt;{{ .Date.Format &#34;2 Jan 2006&#34; }}&lt;/<span style="color:#f92672">time</span>&gt;
+                        &lt;/<span style="color:#f92672">div</span>&gt;
+                        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-body&#34;</span>&gt;
+                            {{ .Content }}
+                        &lt;/<span style="color:#f92672">div</span>&gt;
+                        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-footer mt-5 py-4&#34;</span>&gt;
+                            
+                            {{ if eq .Type &#34;post&#34; }} {{ partial &#34;disqus.html&#34; . }} {{ end }}
+                        &lt;/<span style="color:#f92672">div</span>&gt;
+                    &lt;/<span style="color:#f92672">div</span>&gt;
+                &lt;/<span style="color:#f92672">div</span>&gt;
+
+                 {{ partial &#34;footer.html&#34; . }}
+            &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+
+&lt;/<span style="color:#f92672">body</span>&gt;
+
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p>Penampakannya:</p>
+<p>
+
+<img class="img-fluid" src="/img/tema-baru/single.png" />
+
+</p>
+<p>Untuk kode-kode yang lain seperti partial, dapat dilihat di repository ini: <a href="https://github.com/ardianta/blog">https://github.com/ardianta/blog</a></p>
+<p>Untuk tampilan CSS, saya masih mengandalkan Bootstrap 4. Karena belum mampu
+membuat CSS sendiri 😄.</p>
+<h2 id="tampilannya-kok-sederhana-sekali">Tampilannya kok sederhana sekali?</h2>
+<p>Sederhana lebih bagus, karena blog ini akan saya fokuskan
+untuk mencatat saja. Apa yang akan dicatat? Ya, apa saja yang
+menarik untuk diacat 😄.</p>
+<p>Font yang digunakan sama seperti <a href="https://www.petanikode.com/">Petanikode</a>,
+yaitu: Roboto dan Merriweather. Entah mengapa, saya begitu suka dengan kombinasi
+dua font ini.</p>
+<h2 id="apa-selanjutnya">Apa Selanjutnya?</h2>
+<p>Tema ini masih belum sempurna. Masih banyak yang harus diperbaiki dan ditambahkan.</p>
+<p>Kita lihat saja nanti kelanjutannya.</p>
+
+                            </div>
+                            <div class="post-footer mt-5 py-4">
+                                
+                                 <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = "https:\/\/www.ardianta.com\/blog\/tema-baru-hugo\/";
+        this.page.identifier = "tema-baru-hugo";
+        this.page.title = "Membuat Tema Hugo Sendiri";
+    };
+
+    (function () {
+        
+        
+        
+        
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'ardianta';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+    <span class="logo-disqus">Disqus</span>
+</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <footer class="mt-5 mb-5">
+    <div class="text-center text-secondary">
+
+       &copy; 2017 <a href="https://www.ardianta.com" class="text-secondary"> made kun</a>
+
+    </div>
+</footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

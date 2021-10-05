@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instagram on made kun</title>
+    <link>https://www.ardianta.com/tags/instagram/</link>
+    <description>Recent content in Instagram on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 Nov 2020 02:20:03 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/instagram/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Solved] Fix: Hugo Instagram Embed Shortcode</title>
+      <link>https://www.ardianta.com/blog/fix-hugo-instagram/</link>
+      <pubDate>Tue, 24 Nov 2020 02:20:03 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/fix-hugo-instagram/</guid>
+      <description>Beberapa hari ini build website saya selalu gagal. Akhirnya beberapa artikel tertunda untuk terbit.
+Errornya seperti ini:
+ Kalau diperhatikan, error ini disebabkan karena Github Action tidak bisa mengakses API oEmbed Instagram.
+Jika saya buka link oEmbed secara manual dari browser, link tersebut bisa memberikan data JSON untuk embed post instagram.
+Tapi entah mengapa gagal di akses dari Github Action..
+Hmmmm..
+Saya coba googling dan mencari solusi, akhirnya ketemu issue #7879 di repository Hugo.</description>
+    </item>
+    
+  </channel>
+</rss>

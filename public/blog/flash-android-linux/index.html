@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flash HP Android dari Linux</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<meta itemprop="name" content="Flash HP Android dari Linux">
+<meta itemprop="description" content="Cara Flash HP Android dari Linux dengan fastboot dan adb."><meta itemprop="datePublished" content="2020-08-17T00:36:34+08:00" />
+<meta itemprop="dateModified" content="2020-08-17T00:36:34+08:00" />
+<meta itemprop="wordCount" content="314">
+<meta itemprop="keywords" content="Android,Linux," />
+
+<meta property="og:title" content="Flash HP Android dari Linux" />
+<meta property="og:description" content="Cara Flash HP Android dari Linux dengan fastboot dan adb." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ardianta.com/blog/flash-android-linux/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-17T00:36:34+08:00" />
+<meta property="article:modified_time" content="2020-08-17T00:36:34+08:00" />
+
+
+<meta content='summary_large_image' name='twitter:card' />
+<meta content='@ardiantapargo' name='twitter:site' />
+<meta content='@ardiantapargo' name='twitter:creator' />
+<meta property='og:image' content='https://www.ardianta.com'
+/>
+<meta content='id_ID' property='og:locale' />
+<meta content='ms_MY' property='og:locale:alternate' />
+<meta content='en_US' property='og:locale:alternate' />
+
+
+
+
+<meta content='ardianta.pargo' property='fb:profile_id' />
+
+<meta property="article:author" content="https://web.facebook.com/ardianta.pargo" />
+
+
+
+
+<meta name="p:domain_verify" content="045746d704fe9ae94f6f3e87acc80385"/>
+
+<link rel="icon" href="/img/ardianta.jpg" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'> 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-54154424-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+<body class="bg-light">
+
+    <header>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h1>
+                    <a href="https://www.ardianta.com">
+                        <img class="mw-100" src="/img/logo-web.png" height="120" alt="ardianta logo" />
+                    </a>
+                </h1>
+
+                <ul class="nav justify-content-center">
+                    
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://ardiantapargo.deviantart.com/">Art</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://twitter.com/ardiantapargo">Twitter</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://github.com/ardianta">Github</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="http://feeds.feedburner.com/ardianta">RSS</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 col-12">
+                <div class="card rounded-0 post-outer">
+                    <div class="card-body p-md-5">
+                        <div class="post-content">
+                            <div class="post-header mb-3">
+                                <h2 class="post-title">Flash HP Android dari Linux</h2>
+                                <hr>
+                                <span class="text-secondary small">Update terakhir: </span>
+                                <time class="text-secondary small" title="2020-08-17 00:36:34 &#43;0800 &#43;0800">17 Aug 2020</time>
+                            </div>
+                            <div class="post-body">
+                                <p>Saya punya HP Xiaomi Redmi 2 (HM2014819) yang sudah lama mati. HP tersebut pernah error, entah karena apa.. ia bootloop.</p>
+<p>Salah satu solusi dari permasalah ini adalah flash dengan ROM yang baru.</p>
+<p>Saya sempat berpikir, kalau Flashing HP harus pakai Mi Flash. Sedangkan aplikasi Mi Flash belum ada untuk Linux.</p>
+<p>Tapi ternyata saya salah.</p>
+<p>Flash HP di Linux cukup dilakukan dengan dua tools, yakni <code>adb</code> dan <code>fastboot</code>. Sebenarnya dua program ini sudah ada di komputer saya, karena sebelumnya saya pernah pakai buat <em>coding</em> aplikasi android di android studio.</p>
+<h2 id="persiapan">Persiapan</h2>
+<ol>
+<li>Sudah menginstal <code>adb</code> dan <code>fastboot</code>, ini bisa didapatkan dari Android SDK atau juga menginstal dari <code>apt</code></li>
+<li>Menyiapkan file ROM, saya sendiri pakai <a href="https://wiki.lineageos.org/devices/">ROM LineageOS</a></li>
+</ol>
+<h2 id="mulai">Mulai..</h2>
+<p>Oke, sekarang yang perlu dilakukan adalah booting ke fastboot android. Caranya, tekan tombol volume up + powert. Beda HP beda juga caranya, silahkan cari sendiri di Google.</p>
+<p>Setelah itu, hubungkan HP dengan Laptop dengan kabel data.</p>
+<p>Ketik <code>fastboot devices</code>, jika di sana ada muncul seperti ini:</p>
+<p>
+
+
+
+
+
+<pre>/img/flash-android-linux/fastboot-device.png</pre>
+
+
+<img class="img-fluid" src="/img/flash-android-linux/fastboot-device.png" />
+
+</p>
+<p>Maka ini artinya, device kita sudah terdeteksi.</p>
+<p>Berikutnya kita harus melakukan flashing dengan recovery image dari ROM yang didapatkan dari LineageOS.</p>
+<p>Ketik perintah:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fastboot flash nama-file-recovery.img
+</code></pre></div><p>Setelah itu, lakukan booting ke image tersebut dengan perintah:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fastboot boot nama-file-recovery.img
+</code></pre></div><p>Contoh outputnya akan seperti ini:</p>
+<p>
+
+
+
+
+
+<pre>/img/flash-android-linux/flash.png</pre>
+
+
+<img class="img-fluid" src="/img/flash-android-linux/flash.png" />
+
+</p>
+<p>Pada tahapan ini, kita sudah melakukan flash recovery image ke HP. Nah, dari sini kita bisa melakukan factory reset dan menghapus semua data yang ada di HP.</p>
+<p>Setelah itu, kita akan menginstal Firmware dan ROM dari LineageOS dengan <code>adb</code>.</p>
+<p>Masih dalam mode recovery lineageos, masuk ke menu <strong>Apply Update</strong> &gt; <strong>Apply from ADB</strong>. Sehingga device siap menerima file zip dari <code>adb sideload</code> .</p>
+<p>
+
+
+
+
+
+<pre>/img/flash-android-linux/lineageosrecovery.png</pre>
+
+
+<img class="img-fluid" src="/img/flash-android-linux/lineageosrecovery.png" />
+
+</p>
+<p>Jika device dalam status siap menerima <code>adb sideload</code>, maka kita bisa install Firmware dan ROM.</p>
+<p>
+
+
+
+
+
+<pre>/img/flash-android-linux/install-firmware-dan-rom.png</pre>
+
+
+<img class="img-fluid" src="/img/flash-android-linux/install-firmware-dan-rom.png" />
+
+</p>
+<p>Setelah itu, kita tinggal reboot HP-nya dengan perintah:</p>
+<pre tabindex="0"><code>adb reboot
+</code></pre><p>Done.</p>
+<h2 id="itu-saja">Itu saja?</h2>
+<p>Ya, cuma itu ada sih. Selanjutnya tinggal install aplikasi yang dibutuhkan seperti Playstore, Gmail, dan lain-lain.</p>
+
+                            </div>
+                            <div class="post-footer mt-5 py-4">
+                                
+                                 <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = "https:\/\/www.ardianta.com\/blog\/flash-android-linux\/";
+        this.page.identifier = "flash-android-linux";
+        this.page.title = "Flash HP Android dari Linux";
+    };
+
+    (function () {
+        
+        
+        
+        
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'ardianta';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+    <span class="logo-disqus">Disqus</span>
+</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <footer class="mt-5 mb-5">
+    <div class="text-center text-secondary">
+
+       &copy; 2020 <a href="https://www.ardianta.com" class="text-secondary"> made kun</a>
+
+    </div>
+</footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

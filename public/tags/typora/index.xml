@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typora on made kun</title>
+    <link>https://www.ardianta.com/tags/typora/</link>
+    <description>Recent content in Typora on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 25 Aug 2021 15:08:15 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/typora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Konfigurasi Image Typora untuk Hugo</title>
+      <link>https://www.ardianta.com/blog/typora-hugo/</link>
+      <pubDate>Wed, 25 Aug 2021 15:08:15 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/typora-hugo/</guid>
+      <description>Sudah lama saya menulis konten di Hugo dengan Typora dan menikmati fitur yang disediakan oleh Typora.
+Salah satu fitur yang saya sukai adalah bisa drag &amp;amp; drop gambar ke dalam artikel dan Typora akan otomatis melakukan copy ke folder yang kita tentukan.
+Bahkan bisa juga otomatis melakukan upload ke layanan yang kita inginkan, misalnya seperti AWS S3 atau Firebase Storage.
+Namun, yang akan saya bahas kali ini adalah gimana cara konfigurasi Typora untuk copy image ke folder static dan bisa ditampilkan di Teks Editor Typora maupun di website Hugo.</description>
+    </item>
+    
+  </channel>
+</rss>

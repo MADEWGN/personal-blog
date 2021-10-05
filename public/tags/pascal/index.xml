@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pascal on made kun</title>
+    <link>https://www.ardianta.com/tags/pascal/</link>
+    <description>Recent content in Pascal on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 Aug 2021 15:30:39 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/pascal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unit graph untuk Free Pascal di Linux</title>
+      <link>https://www.ardianta.com/blog/fpc-graph/</link>
+      <pubDate>Fri, 06 Aug 2021 15:30:39 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/fpc-graph/</guid>
+      <description>Masalah: Saat compile program pascal yang menggunakan unit graph, ia tidak bisa dan dapat persan error seperti ini:
+program1.pas(2,10) Fatal: Can&#39;t find unit graph used by program1 Ini disebabkan karena unit graph belum terinstal di komputer. Saya menemukan diskusi untuk solusi masalah ini di forum: https://forum.lazarus.freepascal.org/index.php?topic=23777.0
+Solusi: Cek unit Free Pascal yang terinstal di direktori /usr/lib.
+ Dari sana kita bisa tahu library graph apa aja yang sudah terinstal. Pada gambar di atas ada ggigraph dan ptcgraph.</description>
+    </item>
+    
+  </channel>
+</rss>

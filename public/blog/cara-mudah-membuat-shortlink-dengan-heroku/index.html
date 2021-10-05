@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>cara mudah membuat shortlink dengan heroku</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<meta itemprop="name" content="cara mudah membuat shortlink dengan heroku">
+<meta itemprop="description" content="Baru-baru ini banyak sekali situs-situs Shorten URL yang memberikan layanan untuk memperpendek URL, dari situs yang tidak memberikan apa-apa untuk kita sampai ada yang memberikan feedback seperti uang kepada kita untuk setiap URL yang dikunjungi oleh pengunjung.
+Dari banyaknya situs untuk memperpendek URL, situs mana yang pernah kamu coba? apakah adf.ly? shorte.st? de.tk? atau mungkin situs milik saya pendk.tk? :D. Dari situs-situs tersebut mungkin ada kekurangan dan kelebihannya masing-masing ya."><meta itemprop="datePublished" content="2021-09-29T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-29T00:00:00+00:00" />
+<meta itemprop="wordCount" content="236">
+<meta itemprop="keywords" content="heroku," />
+
+<meta property="og:title" content="cara mudah membuat shortlink dengan heroku" />
+<meta property="og:description" content="Baru-baru ini banyak sekali situs-situs Shorten URL yang memberikan layanan untuk memperpendek URL, dari situs yang tidak memberikan apa-apa untuk kita sampai ada yang memberikan feedback seperti uang kepada kita untuk setiap URL yang dikunjungi oleh pengunjung.
+Dari banyaknya situs untuk memperpendek URL, situs mana yang pernah kamu coba? apakah adf.ly? shorte.st? de.tk? atau mungkin situs milik saya pendk.tk? :D. Dari situs-situs tersebut mungkin ada kekurangan dan kelebihannya masing-masing ya." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ardianta.com/blog/cara-mudah-membuat-shortlink-dengan-heroku/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-09-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-29T00:00:00+00:00" />
+
+
+<meta content='summary_large_image' name='twitter:card' />
+<meta content='@ardiantapargo' name='twitter:site' />
+<meta content='@ardiantapargo' name='twitter:creator' />
+<meta property='og:image' content='https://www.ardianta.comhttps://telegra.ph/file/32df589acdbc0f0de1e62.jpg'
+/>
+<meta content='id_ID' property='og:locale' />
+<meta content='ms_MY' property='og:locale:alternate' />
+<meta content='en_US' property='og:locale:alternate' />
+
+
+
+
+<meta content='ardianta.pargo' property='fb:profile_id' />
+
+<meta property="article:author" content="https://web.facebook.com/ardianta.pargo" />
+
+
+
+
+<meta name="p:domain_verify" content="045746d704fe9ae94f6f3e87acc80385"/>
+
+<link rel="icon" href="/img/ardianta.jpg" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'> 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-54154424-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+<body class="bg-light">
+
+    <header>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h1>
+                    <a href="https://www.ardianta.com">
+                        <img class="mw-100" src="/img/logo-web.png" height="120" alt="ardianta logo" />
+                    </a>
+                </h1>
+
+                <ul class="nav justify-content-center">
+                    
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://ardiantapargo.deviantart.com/">Art</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://twitter.com/ardiantapargo">Twitter</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://github.com/ardianta">Github</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="http://feeds.feedburner.com/ardianta">RSS</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 col-12">
+                <div class="card rounded-0 post-outer">
+                    <div class="card-body p-md-5">
+                        <div class="post-content">
+                            <div class="post-header mb-3">
+                                <h2 class="post-title">cara mudah membuat shortlink dengan heroku</h2>
+                                <hr>
+                                <span class="text-secondary small">Update terakhir: </span>
+                                <time class="text-secondary small" title="2021-09-29 00:00:00 &#43;0000 UTC">29 Sep 2021</time>
+                            </div>
+                            <div class="post-body">
+                                <p>
+
+<img class="img-fluid" src="https://camo.githubusercontent.com/2249283c453222458352ad91edb3e43753f0451d26701965af1d1686400b2f09/687474703a2f2f692e696d6775722e636f6d2f72446b4f6438652e706e67" />
+
+</p>
+<p>Baru-baru ini banyak sekali situs-situs Shorten URL yang memberikan layanan untuk memperpendek URL, dari situs yang tidak memberikan apa-apa untuk kita sampai ada yang memberikan feedback seperti uang kepada kita untuk setiap URL yang dikunjungi oleh pengunjung.</p>
+<p>Dari banyaknya situs untuk memperpendek URL, situs mana yang pernah kamu coba? apakah adf.ly? shorte.st? de.tk? atau mungkin situs milik saya pendk.tk? :D. Dari situs-situs tersebut mungkin ada kekurangan dan kelebihannya masing-masing ya.</p>
+<p>Apa kamu pernah berpikir untuk membuat situs Shorten URL milik sendiri? mungkin banyak dari kita pernah berpikir seperti itu dan mungkin kamu juga pernah berpikir kalau membuat sebuah situs untuk memperpendek URL itu sulit. Sebenarnya untuk membuat situs seperti itu tidaklah sulit, hanya saja kita butuh sedikit niat, iya bro cuma butuh niat aja. </p>
+<p>jadi yang kita butuhkan di sini adalah</p>
+<ol>
+<li>akun github</li>
+<li>akun heroku</li>
+</ol>
+<p>jika kamu belum punya ke dua dua nya silakan di buat dulu, karena kita akan menggunakan hosting atau server dari heroku.</p>
+<p>langsung aja ke tutorial nya ya !!!</p>
+<ol>
+<li>
+<p>buka link <a href="https://github.com/MADEWGN/fast-url">https://github.com/MADEWGN/fast-url</a> lalu langsung fork agar tersalin ke akun github mu, setelah itu silakan buka tombol <code>deploy</code> nya di tab baru</p>
+</li>
+<li>
+<p>silakan beri nama app nya setelah itu langsung tekan <code>deploy</code></p>
+</li>
+</ol>
+<p>
+
+<img class="img-fluid" src="https://telegra.ph/file/bb7e5eed8925cee277473.jpg" />
+
+</p>
+<p>seperti ini saya menggunakan nama <code>fast-links</code></p>
+<p>langsung saja deploy dan tunggu hinga proses nya selesai.</p>
+<p>jika sudah selesai buka <code>Manage app</code> dan langkah terakhir <code>tinggal open app</code> selesai.</p>
+<p>nanti nya setelah di buka akan terlihat seperti ini</p>
+<p>
+
+<img class="img-fluid" src="https://camo.githubusercontent.com/2249283c453222458352ad91edb3e43753f0451d26701965af1d1686400b2f09/687474703a2f2f692e696d6775722e636f6d2f72446b4f6438652e706e67" />
+
+</p>
+<p>live demo : <a href="https://fast-links.herokuapp.com/">https://fast-links.herokuapp.com/</a></p>
+
+                            </div>
+                            <div class="post-footer mt-5 py-4">
+                                
+                                 <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = "https:\/\/www.ardianta.com\/blog\/cara-mudah-membuat-shortlink-dengan-heroku\/";
+        this.page.identifier = "";
+        this.page.title = "cara mudah membuat shortlink dengan heroku";
+    };
+
+    (function () {
+        
+        
+        
+        
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'ardianta';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+    <span class="logo-disqus">Disqus</span>
+</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <footer class="mt-5 mb-5">
+    <div class="text-center text-secondary">
+
+       &copy; 2021 <a href="https://www.ardianta.com" class="text-secondary"> made wiguna - persoanl blog</a>
+
+    </div>
+</footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

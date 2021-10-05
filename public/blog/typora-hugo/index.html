@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Konfigurasi Image Typora untuk Hugo</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<meta itemprop="name" content="Konfigurasi Image Typora untuk Hugo">
+<meta itemprop="description" content="Cara konfigurasi Image di Typora untuk menulis konten Hugo. Sehingga kamu bisa lebih produktif."><meta itemprop="datePublished" content="2021-08-25T15:08:15+08:00" />
+<meta itemprop="dateModified" content="2021-08-25T15:08:15+08:00" />
+<meta itemprop="wordCount" content="427">
+<meta itemprop="keywords" content="Typora,Hugo," />
+
+<meta property="og:title" content="Konfigurasi Image Typora untuk Hugo" />
+<meta property="og:description" content="Cara konfigurasi Image di Typora untuk menulis konten Hugo. Sehingga kamu bisa lebih produktif." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ardianta.com/blog/typora-hugo/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-25T15:08:15+08:00" />
+<meta property="article:modified_time" content="2021-08-25T15:08:15+08:00" />
+
+
+<meta content='summary_large_image' name='twitter:card' />
+<meta content='@ardiantapargo' name='twitter:site' />
+<meta content='@ardiantapargo' name='twitter:creator' />
+<meta property='og:image' content='https://www.ardianta.com/img/typora-hugo/konfigurasi-typora-image.png'
+/>
+<meta content='id_ID' property='og:locale' />
+<meta content='ms_MY' property='og:locale:alternate' />
+<meta content='en_US' property='og:locale:alternate' />
+
+
+
+
+<meta content='ardianta.pargo' property='fb:profile_id' />
+
+<meta property="article:author" content="https://web.facebook.com/ardianta.pargo" />
+
+
+
+
+<meta name="p:domain_verify" content="045746d704fe9ae94f6f3e87acc80385"/>
+
+<link rel="icon" href="/img/ardianta.jpg" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'> 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-54154424-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+<body class="bg-light">
+
+    <header>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h1>
+                    <a href="https://www.ardianta.com">
+                        <img class="mw-100" src="/img/logo-web.png" height="120" alt="ardianta logo" />
+                    </a>
+                </h1>
+
+                <ul class="nav justify-content-center">
+                    
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://ardiantapargo.deviantart.com/">Art</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://twitter.com/ardiantapargo">Twitter</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="https://github.com/ardianta">Github</a>
+                    </li>
+                    
+                    <li class='nav-item '>
+                        <a class="nav-link" href="http://feeds.feedburner.com/ardianta">RSS</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 col-12">
+                <div class="card rounded-0 post-outer">
+                    <div class="card-body p-md-5">
+                        <div class="post-content">
+                            <div class="post-header mb-3">
+                                <h2 class="post-title">Konfigurasi Image Typora untuk Hugo</h2>
+                                <hr>
+                                <span class="text-secondary small">Update terakhir: </span>
+                                <time class="text-secondary small" title="2021-08-25 15:08:15 &#43;0800 &#43;0800">25 Aug 2021</time>
+                            </div>
+                            <div class="post-body">
+                                <p>Sudah lama saya menulis konten di Hugo dengan Typora dan menikmati fitur yang disediakan oleh Typora.</p>
+<p>Salah satu fitur yang saya sukai adalah bisa drag &amp; drop gambar ke dalam artikel dan Typora akan otomatis melakukan copy ke folder yang kita tentukan.</p>
+<p>Bahkan bisa juga otomatis melakukan upload ke layanan yang kita inginkan, misalnya seperti AWS S3 atau Firebase Storage.</p>
+<p>Namun, yang akan saya bahas kali ini adalah gimana cara konfigurasi Typora untuk copy image ke folder <code>static</code> dan bisa ditampilkan di Teks Editor Typora maupun di website Hugo.</p>
+<p>Mari kita mulai..</p>
+<h2 id="konfigurasi-front-matter-di-archetype">Konfigurasi Front-matter di Archetype</h2>
+<p>Berikut ini konfigurasi <code>archetypes/post.md</code> milik saya.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;{{ replace .TranslationBaseName &#34;</span>-<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#34; | title }}&#34;</span>
+<span style="color:#f92672">slug</span>: {{ <span style="color:#ae81ff">.BaseFileName }}</span>
+<span style="color:#f92672">date</span>: {{ <span style="color:#ae81ff">.Date }}</span>
+<span style="color:#f92672">draft</span>: <span style="color:#66d9ef">true</span>
+
+<span style="color:#f92672">type</span>: <span style="color:#ae81ff">post</span>
+
+<span style="color:#f92672">tags</span>:
+    - <span style="color:#ae81ff">tag</span>
+
+<span style="color:#f92672">image</span>: <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;&#34;</span>
+
+<span style="color:#f92672">typora-root-url</span>: <span style="color:#ae81ff">../../static</span>
+<span style="color:#f92672">typora-copy-images-to</span>: <span style="color:#ae81ff">../../static/img/{{ .Name }}/</span>
+---
+</code></pre></div><p>Coba perhatikan dua atribut terakhir di <em>archetype</em> ini!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">typora-root-url</span>: <span style="color:#ae81ff">../../static</span>
+<span style="color:#f92672">typora-copy-images-to</span>: <span style="color:#ae81ff">../../static/img/{{ .Name }}/</span>
+</code></pre></div><p>Ini adalah atribut yang dibutuhkan Typora.</p>
+<ul>
+<li><code>typora-root-url</code> adalah root URL untuk file statis yang akan digunakan oleh Typora.</li>
+<li><code>typora-copy-images-to</code> adalah path yang akan digunakan oleh typora untuk melakukan copy otomatis saat kita melakukan drag &amp; drop gambar.</li>
+</ul>
+<p>Perlu di ketahui, arti dari <code>../../</code> adalah dua folder di atasnya. Karena file konten yang sedang dibuka berada di dalam folder <code>content/post/</code> sementara file statis berada di <code>static/</code> maka kita perlu naik dua level untuk mengakses folder tersebut.</p>
+<p>Jika kamu menggunakan <a href="https://gohugo.io/content-management/page-bundles/">page bundle</a>, beda lagi konfigurasinya.</p>
+<p>Mungkin akan seperti ini:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">typora-root-url</span>: <span style="color:#ae81ff">./</span>
+<span style="color:#f92672">typora-copy-images-to</span>: <span style="color:#ae81ff">./</span>
+</code></pre></div><p>Ini karena page bundle menyimpan gambar di satu folder dengan file page kontenya.</p>
+<p>Saya sendiri tidak menggunakan page bundle, karena tidak ingin mencampurkan konten dengan gambar, biar tidak berantakan hehe.</p>
+<p>Tapi ya, preferensi orang.. beda-beda.</p>
+<p>Ikuti saja yang mana paling nyaman menurutmu.</p>
+<p>Kemudian setelah ini diapain?</p>
+<p>Selanjutnya:</p>
+<h2 id="konfigurasi-image-di-typora">Konfigurasi Image di Typora</h2>
+<p>Buka menu <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Image</strong>, kemudian atur seperti ini:</p>
+<p>
+
+<img class="img-fluid" src="/img/typora-hugo/konfigurasi-typora-image.png" />
+
+</p>
+<p>Untuk centang <strong>Apply above rules to online image</strong> boleh juga dicentang, jika ingin menerapkan aturan ini pada gambar yang di copy dari internet.</p>
+<p>Note:</p>
+<p>Untuk yang menggunakan page bundle, tidak perlu menambahkan <code>img</code>, langsung saja tulis lokasi path-nya seperti ini:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./<span style="color:#e6db74">${</span>filename<span style="color:#e6db74">}</span>
+</code></pre></div><p>Oke..</p>
+<p>Setelah itu, kita bisa mencoba.</p>
+<h2 id="percobaan">Percobaan</h2>
+<p>Coba buat konten <code>post</code> baru di Hugo, kemudian buka dengan Typora.</p>
+<p>Lalu, drag &amp; drop gambar ke sana.</p>
+<p>Maka akan muncul:</p>
+<p>
+
+<img class="img-fluid" src="/img/typora-hugo/craete-folder.png" />
+
+</p>
+<p>Kita diminta untuk membuat folder baru, karena target folder yang kita tentukan di <code>typora-copy-image-to</code> belum ada.</p>
+<p>Langsung saja klik <strong>Create Folder</strong>, maka gambar akan ditambahkan ke artikel seperti ini.</p>
+<p>
+
+<img class="img-fluid" src="/img/typora-hugo/typora-inserted-image.png" />
+
+</p>
+<h2 id="akhir-kata">Akhir Kata..</h2>
+<p>Nah, begitulah cara saya mengkonfigurasi Typora untuk menulis konten pada Hugo.</p>
+<p>Typora memang memudahkan pekerjaan saya dalam menulis konten.</p>
+<p>Selamat mencoba!</p>
+
+                            </div>
+                            <div class="post-footer mt-5 py-4">
+                                
+                                 <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = "https:\/\/www.ardianta.com\/blog\/typora-hugo\/";
+        this.page.identifier = "typora-hugo";
+        this.page.title = "Konfigurasi Image Typora untuk Hugo";
+    };
+
+    (function () {
+        
+        
+        
+        
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'ardianta';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+    <span class="logo-disqus">Disqus</span>
+</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <footer class="mt-5 mb-5">
+    <div class="text-center text-secondary">
+
+       &copy; 2021 <a href="https://www.ardianta.com" class="text-secondary"> made kun</a>
+
+    </div>
+</footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

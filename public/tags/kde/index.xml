@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KDE on made kun</title>
+    <link>https://www.ardianta.com/tags/kde/</link>
+    <description>Recent content in KDE on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 11 May 2021 09:24:09 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/kde/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix: Kde Flicker Bug</title>
+      <link>https://www.ardianta.com/blog/fix-kde-flicker-bug/</link>
+      <pubDate>Tue, 11 May 2021 09:24:09 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/fix-kde-flicker-bug/</guid>
+      <description>⚠ Masalah: Terjadi flicker atau layar berkedip saat resize window di Kubuntu 20.04. Mungkin saja VGA Card yang digunakan laptop saya tidak mampu menghandle animasinya.
+Video Demo:
+  ✅ Solusi: Buka, Settings-&amp;gt;Display and Monitor. Lalu ubah settingan compositor.
+ Saya gunakan OpenGL 2.0 sebagai rendering backend. Entah mengapa, kalau pakai yang lain terjadi flicker.</description>
+    </item>
+    
+    <item>
+      <title>Fix: Tombol Meta/Windows tidak Membuka Menu di KDE</title>
+      <link>https://www.ardianta.com/blog/fix-kde-menu-meta/</link>
+      <pubDate>Tue, 11 May 2021 07:20:47 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/fix-kde-menu-meta/</guid>
+      <description>⚠ Masalah: Tombol Meta atau Windows tidak berfungsi untuk membuka menu launcher di KDE. Saat ini saya pakai Kubuntu 20.04 dengan KDE Plasma 5.
+✅ Solusi: Buka Global Shortcut, bisa dari System Settings atau juga menu launcher.
+Kemudian, masuk ke menu Plasma, lalu tambahkan Alt+F1 sebagai key shortcut untuk Activate Application Menu Widget.
+ Jika belum bisa, coba klik kanan pada Menu launcher lalu pilih Configure Application Menu.
+ Setelah itu, tambahkan Alt+F1 sebagai shortcut untuk membuka menu tersebut.</description>
+    </item>
+    
+  </channel>
+</rss>

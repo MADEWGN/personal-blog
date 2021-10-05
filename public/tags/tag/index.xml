@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag on made kun</title>
+    <link>https://www.ardianta.com/tags/tag/</link>
+    <description>Recent content in tag on made kun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Apr 2021 12:32:40 +0800</lastBuildDate><atom:link href="https://www.ardianta.com/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rename Banyak File dengan Regex</title>
+      <link>https://www.ardianta.com/blog/rename-file-regex/</link>
+      <pubDate>Thu, 01 Apr 2021 12:32:40 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/rename-file-regex/</guid>
+      <description>Install dulu program rename:
+sudo apt install rename Setelah itu masuk ke folder tempat semua file berada, lalu jalankan perintah rename dengan regex.
+rename -n &amp;#39;s/&amp;lt;regex untuk search file&amp;gt;/&amp;lt;regex untuk replace&amp;gt;/&amp;#39; *.ext Opsi -n akan memberikan output dari hasil rename, ini berguna untuk coba-coba regex-nya sebelum di rename.
+Simbol s/ para regex berarti kita akan melakukan subtitusi atau replace.
+Contoh:
+list file sebagai berikut:
+[Anime] Black Clover BD - 01.mkv [Anime] Black Clover BD - 02.</description>
+    </item>
+    
+    <item>
+      <title>Percepat Scroll Zoom Figma di Firefox</title>
+      <link>https://www.ardianta.com/blog/figma-scroll-firefox/</link>
+      <pubDate>Fri, 05 Feb 2021 23:58:58 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/figma-scroll-firefox/</guid>
+      <description>Hari ini saya banyak menghabiskan waktu di Figma, mulai dari belajar desain UI/UX hingga belajar menggunakan Figma untuk kebutuhan sehari-hari.
+Tapi ada masalah kecil yang saya alami saat membuka Figma di Firefox.
+Apa itu?
+Zoom in dan zoom out Figma di Firefox terasa lambat. Tidak seperti di Chrome.
+Tapi tentang, saya sudah ketemu solusinya:
+ Buka about:config di address bar Lalu cari mousewheel.with_control.delta_multiplier_y Ubah nilainya dari 100 menjadi 500   Sekarang saat kita mengekan tombol Ctrl+Scroll mouse, maka kecepatannya akan bertambah cepat.</description>
+    </item>
+    
+    <item>
+      <title>Masalah saat Upgrade ke Ubuntu 20.04 (Focal)</title>
+      <link>https://www.ardianta.com/blog/upgrade-ubuntu-focal/</link>
+      <pubDate>Mon, 06 Jul 2020 18:04:46 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/upgrade-ubuntu-focal/</guid>
+      <description>Hari ini saya melakukan upgrade Ubuntu 18.04 ke 20.04, sebenarnya versi ini masih belum stabil. Menurut pengumuman resminya, nanti tanggl 6 agustus akan dirilis versi stabilnya.
+Tapi, saya malah nekat upgrade.. karena ingin mencoba fitur-fitur baru yang ada di sana.
+Hasilnya:
+Mengecewakan!
+Karena saya dapat beberapa masalah.. huh! :triumph:
+1. Dolphin Tidak Bisa buka File Setelah selesai upgrade, saya langsung membuka file manager Dolphin, akan tetapi dapat pesan error.
+Error loading &amp;#39;/usr/lib/qt/plugins/kf5/kio/file.</description>
+    </item>
+    
+    <item>
+      <title>Cegah Ghost Spam di Google Analytic</title>
+      <link>https://www.ardianta.com/blog/ghost-spam/</link>
+      <pubDate>Fri, 01 Mar 2019 20:17:20 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/ghost-spam/</guid>
+      <description>Pada tanggal 24 kemarin, trafik di petanikode tiba-tiba meningkat 2x lipat dari biasanya.
+ Apakah ini bagus?
+Tentu saja tidak, karena trafiknya bersal dari spam.
+Entah ini disengaja atau tidak, laporan page dari web rmco.id masuk ke google analytic petanikode yang membuat saya bingung.
+Tapi untungnya saya menemukan solusinya di https://carloseo.com/removing-google-analytics-spam/
+Langkah-langkah pencegahannya:
+ Masuk ke Admin -&amp;gt; Filter Buat Filter Baru Pilih Include Masukan alamat domain di dalam filter patterrn Simpan   Maka laporan trafik yang akan masuk ke Google Analytic hanya akan menampilkan dari domain www.</description>
+    </item>
+    
+    <item>
+      <title>2 Minggu Tanpa Coding</title>
+      <link>https://www.ardianta.com/blog/isra-mikraj-2018/</link>
+      <pubDate>Fri, 06 Apr 2018 22:47:33 +0800</pubDate>
+      
+      <guid>https://www.ardianta.com/blog/isra-mikraj-2018/</guid>
+      <description>Dua minggu ini saya nggak pernah coding, karena acara lomba dalam rangka peringatan Isra&#39; Mikraj.
+Saya menjadi panitia di acara ini.
+Selama dua minggu ini, jarang online&amp;hellip;
+&amp;hellip;karena acara selesai sampai jam 10, dan beres-beres sampai jam 12.
+Akun github saya menjadi sepi.
+ Tapi yang seru di acara ini:
+Bisa ngopi bareng teman-teman.
+ Bisa merasakan &amp;ldquo;lelahnya&amp;rdquo; menjadi panitia.
+ dan masih banyak lagi.</description>
+    </item>
+    
+  </channel>
+</rss>

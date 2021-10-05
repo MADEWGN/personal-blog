@@ -1,0 +1,20 @@
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+before_script:
+  - apk add --update --no-cache git
+  - hugo version
+
+stages:
+  - deploy
+
+deploy:
+  script:
+  - hugo --minify --enableGitInfo
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
