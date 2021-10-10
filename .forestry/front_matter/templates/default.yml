@@ -29,3 +29,5 @@ fields:
 - type: text
   name: typora-copy-images-to
   label: typora-copy-images-to
+pages:
+- content/post/cara-install-hugo.md
