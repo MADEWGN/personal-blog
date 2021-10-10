@@ -1,0 +1,31 @@
+---
+label: Default
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: slug
+  label: slug
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: type
+  label: type
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: image
+  label: image
+- type: text
+  name: description
+  label: description
+- type: text
+  name: typora-root-url
+  label: typora-root-url
+- type: text
+  name: typora-copy-images-to
+  label: typora-copy-images-to
