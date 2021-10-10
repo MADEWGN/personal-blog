@@ -11,3 +11,4 @@ typora-copy-images-to = ""
 typora-root-url = ""
 
 +++
+Halo bro apa kabar nih?
